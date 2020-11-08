@@ -32,3 +32,6 @@ docker-compose run go
 ```
 
 Once you've done that you are inside your new development environment, get or clone your project and you can start working on it :)
+
+### Ports
+If you want your app to be exposed outside of your container, run it on the port 8080, then you can go on https://localhost:8080 on your web browser
