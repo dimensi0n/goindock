@@ -1,0 +1,20 @@
+version: '3.1'
+
+services:
+  go:
+    image: dimensi0n/goindock
+    ports:
+      - 8080:8080
+
+  db:
+    image: mariadb
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - 8081:8080
+
