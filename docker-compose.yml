@@ -1,0 +1,23 @@
+version: '3.1'
+
+services:
+  # Your app is available at port 8080
+  go:
+    image: dimensi0n/goindock
+    ports:
+      - 8080:8080
+
+  # Use root/root as username/password
+  db:
+    image: mariadb
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+
+  # Adminer is available at port 8081
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - 8081:8080
+
