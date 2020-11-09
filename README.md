@@ -7,7 +7,9 @@ No more need to install Golang on your computer, use docker instead with this de
 ## What's in this ?
 
 * Alpine as Operating System
+* Docker in docker
 * Golang (latest version)
+* Fish shell and Oh-My-Fish
 * Git
 * Fully configured Vim for Golang
 
@@ -35,3 +37,7 @@ Once you've done that you are inside your new development environment, get or cl
 
 ### Ports
 If you want your app to be exposed outside of your container, run it on the port 8080, then you can go on https://localhost:8080 on your web browser
+
+## Vim
+
+Run `:PlugInstall` on the first start to install theme and other things then run `:GoInstallBinaries`.
