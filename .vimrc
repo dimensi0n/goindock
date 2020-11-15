@@ -101,8 +101,8 @@ nnoremap Y y$
 autocmd BufEnter * silent! lcd %:p:h
 
 
-" Autocomplete on .
-imap <Space> <c-x><c-o>
+" Autocomplete on tab
+imap <Tab> <c-x><c-o>
 
 """""""""""""""""""""
 "      Plugins      "
